@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html::-webkit-scrollbar {
+    width: 30px;
+    height: 30px;
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+
+::-webkit-scrollbar {
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #37393b;
+}
+
+body {
+    font-family: 'Nunito';
+    margin: 0 18px;
+}
+
+header {
+    text-align: center;
+    h1 {
+        margin-bottom: 5px;
+    }
+    h2 {
+        margin-top: 0;
+        color: rgb(102, 102, 102);
+    }
+}
+
+.limitWrap {
+    display: grid;
+    grid-template-columns: max-content 40px;
+    
+    :first-child, :last-child {
+        font-size: 17px;
+    }
+    
+    :last-child {
+        border-radius: 10px;
+        padding: 0 7px;
+        height: 28px;
+        max-width: 55px;
+        margin: auto;
+        margin-left: 10px;
+        border: solid #666 2px;
+        color: rgb(53, 53, 53);
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-column-gap: 85px;
+    grid-row-gap: 30px;
+    margin-right: 13px;
+    margin-top: 25px;
+}
+
+$correct-color: rgb(49, 97, 30);
+$wrong-color: rgb(97, 30, 30);
+
+.zadacaGroup {
+    display: grid;
+    grid-template-columns: max-content 50px;
+    grid-gap: 10px;
+    background-color: rgb(63, 63, 63);
+    min-width: 140px;
+    width: fit-content;
+    padding: 0 20px;
+    border-radius: 10px;
+    .zadaca, input {
+        font-size: 17px;
+    }
+    .zadaca {
+        color: rgb(255, 255, 255);
+    }
+    input {
+        border-radius: 10px;
+        padding: 0 6px;
+        height: 35px;
+        max-width: 50px;
+        margin: auto;
+        border: none;
+    }
+}
+
+.check, .gen {
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    background-color: rgb(102, 102, 102);
+    margin-right: 13px;
+    border-radius: 10px;
+    margin-top: 25px;
+    color: white;
+}
+
+.check {
+    font-family: 'Nunito';
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        background-color: rgb(48, 48, 48);
+        outline: none;
+    }
+}
+
+.gen {
+    border: rgb(139, 139, 139) solid 3px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(82, 81, 81);
+    padding-top: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-family: 'Nunito';
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        border: rgb(48, 48, 48) solid 3px;
+        color: rgb(0, 0, 0);
+        outline: none;
+    }
+}
