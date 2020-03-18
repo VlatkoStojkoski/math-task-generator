@@ -8,14 +8,15 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#">Собирање</a>
+        <a href="#" class="active">Собирање</a>
         <a href="odzemanje.html">Одземање</a>
         <a href="mnozenje.html">Множење</a>
+        <a href="delenje.html">Делење</a>
     </div>
     <header>
         <h1>Задачи со собирање</h1>
     </header>
-    <form class="limitWrap" id="limitForm">
+    <form class="limitForm" id="limitForm">
         <p>Генерирај задачи со собирање до</p>
         <input onchange="genChange()" type="text" value="20" class="limiter" id="limiter">
     </form>
@@ -66,5 +67,6 @@
         <button class="gen" id="gen">Генерирај нови задачи</button>
     </div>
     <script src="scripts/sobiranje.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

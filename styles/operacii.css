@@ -39,7 +39,12 @@ body {
 }
 
 .navbar a:hover {
-  background: #ddd;
+  background: #cfcfcf;
+  color: black;
+}
+
+.navbar .active {
+  background: #ebebeb;
   color: black;
 }
 
@@ -57,20 +62,20 @@ header h2 {
   color: #666666;
 }
 
-.limitWrap {
+.limitForm {
   margin: 0 18px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: max-content 40px max-content;
-      grid-template-columns: -webkit-max-content 40px -webkit-max-content;
-      grid-template-columns: max-content 40px max-content;
+  -ms-grid-columns: max-content 40px;
+      grid-template-columns: -webkit-max-content 40px;
+      grid-template-columns: max-content 40px;
 }
 
-.limitWrap :first-child, .limitWrap :nth-child(2) {
+.limitForm p, .limitForm .limiter {
   font-size: 17px;
 }
 
-.limitWrap :nth-child(2) {
+.limitForm .limiter {
   border-radius: 10px;
   padding: 0 7px;
   height: 28px;
@@ -82,7 +87,7 @@ header h2 {
 }
 
 main {
-  margin: 1em 18px;
+  margin: 0 0 0 18px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (150px)[auto-fill];
@@ -170,5 +175,23 @@ button, input[type="submit"] {
   border: #303030 solid 3px;
   color: black;
   outline: none;
+}
+
+@media only screen and (max-width: 349px) {
+  header {
+    margin-top: 7.5rem;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .limitForm p, .limitForm .limiter {
+    font-size: .85rem;
+  }
+  .limitForm .limiter {
+    border-radius: 7px;
+    padding: 0 6px;
+    height: 24px;
+    width: 40px;
+  }
 }
 /*# sourceMappingURL=operacii.css.map */

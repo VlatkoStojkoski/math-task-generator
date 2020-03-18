@@ -27,21 +27,23 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navbar a:hover {
-    background: #ddd;
-    color: black;
+    a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        &:hover {
+            background: rgb(207, 207, 207);
+            color: black;
+        }
+    }
+    .active {
+        background: rgb(235, 235, 235);
+        color: black;
+    }
 }
 
 header {
@@ -56,16 +58,16 @@ header {
     }
 }
 
-.limitWrap {
+.limitForm {
     margin: 0 18px;
     display: grid;
-    grid-template-columns: max-content 40px max-content;
+    grid-template-columns: max-content 40px;
     
-    :first-child, :nth-child(2) {
+    p, .limiter {
         font-size: 17px;
     }
     
-    :nth-child(2) {
+    .limiter {
         border-radius: 10px;
         padding: 0 7px;
         height: 28px;
@@ -78,7 +80,7 @@ header {
 }
 
 main {
-    margin: 1em 18px;
+    margin: 0 0 0 18px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 150px);
     grid-column-gap: 85px;
@@ -154,5 +156,26 @@ button, input[type="submit"] {
         border: rgb(48, 48, 48) solid 3px;
         color: rgb(0, 0, 0);
         outline: none;
+    }
+}
+
+@media only screen and (max-width: 349px) {
+    header {
+        margin-top: 7.5rem;
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .limitForm {
+        p, .limiter {
+            font-size: .85rem;
+        }
+        .limiter {
+            border-radius: 7px;
+            padding: 0 6px;
+            height: 24px;
+            width: 40px;
+        }
     }
 }

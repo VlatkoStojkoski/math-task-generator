@@ -1,0 +1,33 @@
+.limitForm {
+    margin: 0 0 0 18px;
+    display: grid;
+    grid-template-columns: max-content 40px max-content 10px max-content;
+    grid-template-rows: 1fr 1fr;
+    
+    p, .limiter {
+        font-size: 17px;
+    }
+    
+    .limiter {
+        border-radius: 10px;
+        padding: 0 7px;
+        height: 28px;
+        max-width: 55px;
+        margin: auto;
+        margin-left: 10px;
+        border: solid #666 2px;
+        color: rgb(53, 53, 53);
+    }
+
+    .negWrap {
+        grid-row: 2/3;
+    }
+
+    .negLabel {
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+    }
+}
