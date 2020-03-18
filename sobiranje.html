@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="styles/operacii.css">
 </head>
 <body>
+    <div class="navbar">
+        <a href="#">Собирање</a>
+        <a href="odzemanje.html">Одземање</a>
+    </div>
     <header>
         <h1>Задачи со собирање</h1>
     </header>
-    <div class="limitWrap">
-        <p>Генерирај задачи за собирање до</p>
-        <input type="text" value="20" class="limiter" id="limiter">
-    </div>
+    <form class="limitWrap" id="limitForm">
+        <p>Генерирај задачи со собирање до</p>
+        <input onchange="genChange()" type="text" value="20" class="limiter" id="limiter">
+    </form>
     <main>
         <div class="zadacaGroup">
             <p class="zadaca">3 + 12 = </p>
@@ -60,6 +64,6 @@
         <button class="check" id="check">Провери ги задачите</button>
         <button class="gen" id="gen">Генерирај нови задачи</button>
     </div>
-    <script src="scripts/operacii.js"></script>
+    <script src="scripts/sobiranje.js"></script>
 </body>
 </html>

@@ -17,10 +17,34 @@ html::-webkit-scrollbar {
 
 body {
   font-family: 'Nunito';
-  margin: 0 18px;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
 header {
+  margin-top: 4.5rem;
   text-align: center;
 }
 
@@ -34,18 +58,19 @@ header h2 {
 }
 
 .limitWrap {
+  margin: 0 18px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: max-content 40px;
-      grid-template-columns: -webkit-max-content 40px;
-      grid-template-columns: max-content 40px;
+  -ms-grid-columns: max-content 40px max-content;
+      grid-template-columns: -webkit-max-content 40px -webkit-max-content;
+      grid-template-columns: max-content 40px max-content;
 }
 
-.limitWrap :first-child, .limitWrap :last-child {
+.limitWrap :first-child, .limitWrap :nth-child(2) {
   font-size: 17px;
 }
 
-.limitWrap :last-child {
+.limitWrap :nth-child(2) {
   border-radius: 10px;
   padding: 0 7px;
   height: 28px;
@@ -57,14 +82,13 @@ header h2 {
 }
 
 main {
+  margin: 1em 18px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (150px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 150px);
   grid-column-gap: 85px;
   grid-row-gap: 30px;
-  margin-right: 13px;
-  margin-top: 25px;
 }
 
 .zadacaGroup {
@@ -100,7 +124,7 @@ main {
   border: none;
 }
 
-.check, .gen {
+button, input[type="submit"] {
   border: none;
   padding: 10px;
   font-size: 17px;
@@ -111,15 +135,19 @@ main {
   color: white;
 }
 
-.check {
+.buttons {
+  margin: 0 18px;
+}
+
+.check, .primary {
   font-family: 'Nunito';
 }
 
-.check:hover {
+.check:hover, .primary:hover {
   cursor: pointer;
 }
 
-.check:focus {
+.check:focus, .primary:focus {
   background-color: #303030;
   outline: none;
 }

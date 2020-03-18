@@ -18,10 +18,34 @@ html::-webkit-scrollbar {
 
 body {
     font-family: 'Nunito';
-    margin: 0 18px;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
 }
 
 header {
+    margin-top: 4.5rem;
     text-align: center;
     h1 {
         margin-bottom: 5px;
@@ -33,14 +57,15 @@ header {
 }
 
 .limitWrap {
+    margin: 0 18px;
     display: grid;
-    grid-template-columns: max-content 40px;
+    grid-template-columns: max-content 40px max-content;
     
-    :first-child, :last-child {
+    :first-child, :nth-child(2) {
         font-size: 17px;
     }
     
-    :last-child {
+    :nth-child(2) {
         border-radius: 10px;
         padding: 0 7px;
         height: 28px;
@@ -53,12 +78,11 @@ header {
 }
 
 main {
+    margin: 1em 18px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 150px);
     grid-column-gap: 85px;
     grid-row-gap: 30px;
-    margin-right: 13px;
-    margin-top: 25px;
 }
 
 $correct-color: rgb(49, 97, 30);
@@ -89,7 +113,7 @@ $wrong-color: rgb(97, 30, 30);
     }
 }
 
-.check, .gen {
+button, input[type="submit"] {
     border: none;
     padding: 10px;
     font-size: 17px;
@@ -100,7 +124,11 @@ $wrong-color: rgb(97, 30, 30);
     color: white;
 }
 
-.check {
+.buttons {
+    margin: 0 18px;
+}
+
+.check, .primary {
     font-family: 'Nunito';
     &:hover {
         cursor: pointer;
