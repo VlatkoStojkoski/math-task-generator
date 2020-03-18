@@ -28,7 +28,7 @@ const resetZadaci = (max) => {
     zadaci.forEach((el, index) => {
         num1=random(1, max);
         num2=randomDivisor(num1);
-        while (num1==num2) {
+        while (num1==num2 || num1==1) {
             num1=random(1, max);
             num2=randomDivisor(num1);
         }
