@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи со операции</title>
+    <link rel="stylesheet" href="styles/operacii.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="sobiranje.html">Собирање</a>
+        <a href="odzemanje.html">Одземање</a>
+        <a href="mnozenje.html">Множење</a>
+        <a href="#" class="active">Делење</a>
+        <a href="#" class="icon" onclick="toggleHam()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header>
+        <h1>Задачи со делење</h1>
+    </header>
+    <form class="limitForm" id="limitForm">
+        <p>Генерирај со намаленик до</p>
+        <input onchange="genChange()" type="text" value="20" class="limiter" id="limiter">
+    </form>
+    <main>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+        <div class="zadacaGroup">
+            <p class="zadaca">3 + 12 = </p>
+            <input type="text" inputmode="numeric" class="input">
+        </div>
+    </main>
+    <div class="buttons">
+        <button class="check" id="check">Провери ги задачите</button>
+        <button class="gen" id="gen">Генерирај нови задачи</button>
+    </div>
+    <script src="scripts/delenje.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

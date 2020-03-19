@@ -1,0 +1,41 @@
+.limitForm {
+  margin: 0 0 0 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 40px max-content 10px max-content;
+      grid-template-columns: -webkit-max-content 40px -webkit-max-content 10px -webkit-max-content;
+      grid-template-columns: max-content 40px max-content 10px max-content;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.limitForm p, .limitForm .limiter {
+  font-size: 17px;
+}
+
+.limitForm .limiter {
+  border-radius: 10px;
+  padding: 0 7px;
+  height: 28px;
+  max-width: 55px;
+  margin: auto;
+  margin-left: 10px;
+  border: solid #666 2px;
+  color: #353535;
+}
+
+.limitForm .negWrap {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.limitForm .negLabel {
+  -ms-user-select: none;
+      user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+/*# sourceMappingURL=odzemanje.css.map */
