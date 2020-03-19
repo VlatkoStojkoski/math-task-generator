@@ -37,3 +37,5 @@ const resetZadaci = (max) => {
     });
     console.log(tocniResenija)
 }
+
+// dev branch
