@@ -1,0 +1,72 @@
+.global {
+  text-align: center;
+}
+
+.global h1 {
+  margin-bottom: 0;
+}
+
+.global h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.data {
+  margin: auto;
+  text-align: justify;
+  background-color: #3F3F3F;
+  padding: .3em 1em .3em 1.1em;
+  color: whitesmoke;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.data .data-el {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.data .value {
+  font-weight: 700;
+  margin-left: 1.5vw;
+}
+
+.local {
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.local h1 {
+  margin: 2em 0;
+  margin-bottom: .4em;
+}
+
+@media screen and (max-width: 325px) {
+  .data {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .data {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .data {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .data {
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=coronastats.css.map */

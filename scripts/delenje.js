@@ -25,6 +25,7 @@ const randomDivisor = (n) => {
 }
 
 const resetZadaci = (max) => {
+    tocniResenija = [];
     zadaci.forEach((el, index) => {
         num1=random(1, max);
         num2=randomDivisor(num1);
@@ -35,5 +36,4 @@ const resetZadaci = (max) => {
         el.innerHTML=`${num1} : ${num2} =`;
         tocniResenija.push(num1/num2);
     });
-    console.log(tocniResenija)
 }

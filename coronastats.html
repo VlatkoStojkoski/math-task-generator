@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Math Tasks</title>
+    <link rel="stylesheet" href="styles/operacii.css">
+    <link rel="stylesheet" href="styles/coronastats.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="sobiranje.html">Addition</a>
+        <a href="odzemanje.html">Subtraction</a>
+        <a href="mnozenje.html">Multiplication</a>
+        <a href="delenje.html">Division</a>
+        <a href="#" class="active">COVID-19</a>
+        <a href="#" class="icon" onclick="toggleHam()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="changeLanguage" id="changeLanguage">
+        <img src="images/mk.svg" alt="Macedonian" onclick="translateToMK(1)">
+        <img src="images/uk.svg" alt="English" onclick="translateToEN(1)">
+        <img src="images/al.svg" alt="Albanian" onclick="translateToAL(1)">
+    </div>
+    <section class="global">
+        <h1>Globally</h1>
+        <h2><span id="updateTime">_</span></h2>
+        <div class="data">
+            <p class="data-el">
+                <span class="key">Total cases:</span>
+                <span class="value" id="globalCases">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Active:</span>
+                <span class="value" id="globalActive">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Recovered:</span>
+                <span class="value" id="globalRecovered">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Dead:</span>
+                <span class="value" id="globalDead">_</span>
+            </p>
+        </div>
+    </section>
+    <section class="local">
+        <h1>In Macedonia</h1>
+        <div class="data">
+            <p class="data-el">
+                <span class="key">Total cases:</span>
+                <span class="value" id="localCases">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Active:</span>
+                <span class="value" id="localActive">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Recovered:</span>
+                <span class="value" id="localRecovered">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Dead:</span>
+                <span class="value" id="localDead">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">New:</span>
+                <span class="value" id="localNew">_</span>
+            </p>
+            <p class="data-el">
+                <span class="key">Critical:</span>
+                <span class="value" id="localCritical">_</span>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <span>&copy; 2020 Vlatko Stojkoski</span>
+        <span>The data is taken from the World Health Organization. This does not necessarily mean that the data shown is always accurate</span>
+    </footer>
+    <script>const pageNum=5;</script>
+    <script src="scripts/coronadata.js"></script>
+    <script src="scripts/translate.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

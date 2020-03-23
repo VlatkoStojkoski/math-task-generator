@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задачи со операции</title>
+    <title>COVID-19 Math Tasks</title>
     <link rel="stylesheet" href="styles/operacii.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="navbar" id="navbar">
         <a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <a href="sobiranje.html">Собирање</a>
-        <a href="odzemanje.html">Одземање</a>
-        <a href="mnozenje.html">Множење</a>
-        <a href="delenje.html">Делење</a>
+        <a href="sobiranje.html" >Addition</a>
+        <a href="odzemanje.html" >Subtraction</a>
+        <a href="mnozenje.html" >Multiplication</a>
+        <a href="delenje.html" >Division</a>
+        <a href="coronastats.html" >COVID-19</a>
         <a href="#" class="icon" onclick="toggleHam()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <div class="changeLanguage" id="changeLanguage">
+        <img src="images/mk.svg" alt="Macedonian" onclick="translateToMK()">
+        <img src="images/uk.svg" alt="English" onclick="translateToEN()">
+        <img src="images/al.svg" alt="Albanian" onclick="translateToAL()">
+    </div>
+    <div class="about project">
+        <section class="about-text">
+            <h1>About This Project</h1>
+            <p>This project was made regarding the COVID-19 situation.</p>
+            <p>Young kids can solve randomly generated tasks without bothering their parents to write tasks for them, so that parents can focus more on their work from home.</p>
+            <p>This website motivates kids to solve more tasks by higlighting the correct results in green.</p>
+        </section>
+        <!-- <img src="images/corona.svg"> -->
+    </div>
+    <div class="about me">
+        <section class="about-text">
+            <h1>About Me</h1>
+            <p>My name is Vlatko, I am a web designer/developer based in Macedonia. I like making websites partly inspired by minimalism. I love what I do, and adore the creative process. It is addicting and can give never ending possibilities.</p>
+            <p>Developing has always been my favourite, but lately I've been doing a lot of design too. I thoroughly enjoy doing so.</p>
+        </section>
+        <img src="images/portfolio-pic.jpg" alt="Image of Vlatko Stojkoski">
+    </div>
+    <footer>
+        <span >&copy; 2020 Vlatko Stojkoski</span>
+    </footer>
+    <script>const pageNum=0;</script>
     <script src="scripts/index.js"></script>
-    <script src="scripts/coronadata.js"></script>
+    <script src="scripts/translate.js"></script>
 </body>
 </html>

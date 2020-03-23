@@ -1,4 +1,5 @@
 const resetZadaci = (max) => {
+    tocniResenija = [];
     max-=1;
     zadaci.forEach((el, index) => {
         num1=random(1, max);

@@ -3,75 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задачи со операции</title>
+    <title>COVID-19 Math Tasks</title>
     <link rel="stylesheet" href="styles/operacii.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="navbar" id="navbar">
         <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <a href="#" class="active">Собирање</a>
-        <a href="odzemanje.html">Одземање</a>
-        <a href="mnozenje.html">Множење</a>
-        <a href="delenje.html">Делење</a>
+        <a href="#" class="active" >Addition</a>
+        <a href="odzemanje.html" >Subtraction</a>
+        <a href="mnozenje.html" >Multiplication</a>
+        <a href="delenje.html" >Division</a>
+        <a href="coronastats.html" >COVID-19</a>
         <a href="#" class="icon" onclick="toggleHam()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <div class="changeLanguage" id="changeLanguage">
+        <img src="images/mk.svg" alt="Macedonian" onclick="translateToMK()">
+        <img src="images/uk.svg" alt="English" onclick="translateToEN()">
+        <img src="images/al.svg" alt="Albanian" onclick="translateToAL()">
+    </div>
     <header>
-        <h1>Задачи со собирање</h1>
+        <h1 >Addition tasks</h1>
     </header>
     <form class="limitForm" id="limitForm">
-        <p>Генерирај задачи со собирање до</p>
-        <input onchange="genChange()" type="text" value="20" class="limiter" id="limiter">
+        <label for="limiter" >Generate with results up to</label>
+        <input onchange="genChange()" type="text" value="20" class="limiter" id="limiter" name="limiter">
     </form>
     <main>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
         <div class="zadacaGroup">
-            <p class="zadaca">3 + 12 = </p>
+            <p class="zadaca">_ + _ = </p>
             <input type="text" inputmode="numeric" class="input">
         </div>
     </main>
     <div class="buttons">
-        <button class="check" id="check">Провери ги задачите</button>
-        <button class="gen" id="gen">Генерирај нови задачи</button>
+        <button class="check" id="check" >Check results</button>
+        <button class="gen" id="gen" >Generate tasks</button>
     </div>
+    <footer>
+        <span>&copy; 2020 Vlatko Stojkoski</span>
+    </footer>
+    <script>const pageNum=1;</script>
     <script src="scripts/sobiranje.js"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/translate.js"></script>
 </body>
 </html>
