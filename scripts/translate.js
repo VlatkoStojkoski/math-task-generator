@@ -140,7 +140,7 @@ const translateToMK = () => {
         tA[12][1].innerText = tA[12][0].innerText = 'Вкупно случаи:';
         tA[13][1].innerText = tA[13][0].innerText = 'Активни:';
         tA[14][1].innerText = tA[14][0].innerText = 'Оздравени:';
-        tA[15][1].innerText = tA[15][0].innerText = 'Мртви:';
+        tA[15][1].innerText = tA[15][0].innerText = 'Починати:';
         tA[16].innerText = 'Нови:'
         tA[17].innerText = 'Критични:'
         tA[18].innerText = 'Податоците се земени од Светската здравствена организација. Ова не мора да значи дека податоците кои се прикажани се секогаш точни'
